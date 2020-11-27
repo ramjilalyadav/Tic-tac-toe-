@@ -26,38 +26,33 @@ public:
 	Game();
 
 	void printBoard();
-	// Prints the board pretty-ly
+	
 
 	bool gameOver();
-	// Returns true if a winner has been found or there are no empty spaces
+	
 
 	bool checkWin(Player player);
-	// Checks for a win in computer game
+	
 
 	bool checkWin2(Player player);
-	//check for wins in friend game
+	
 
 	void play(int x);
-	// Primary game driver, loops through turn-by-turn until there's
-	// a winner or full game board (draw)
+	
 	void play2();
 
 	void getHumanMove(Player player);
-	// Takes in values from the input stream and places them on the board
-	// if valid.  Expects input in coordinate notation, ex (1,3)
+	
 
 	int score();
-	// Function to score game board states based on their outcome
-	// Returns 10 for human win, -10 for AI win, 0 for draw
+	
 
 	Move minimax(char AIboard[n][n]);
-	// Returns the best AI move's x, y coords via the minimax algorithm
+	
 
 	int minSearch(char AIboard[n][n]);
-	// minimax helper fn for finding the next move for AI player, chooses the
-	// move with the least possible score
+
 
 	int maxSearch(char AIboard[n][n]);
-	// minimax helper fn for finding the next move for human player, chooses
-	// the move with the least possible score
+	
 };
